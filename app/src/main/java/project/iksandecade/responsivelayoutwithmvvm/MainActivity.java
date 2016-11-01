@@ -12,10 +12,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.tvHelloWorld)
-    TextView tvHelloWorld;
-    @BindView(R.id.btnChange)
-    Button btnChange;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +24,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        btnChange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tvHelloWorld.setText("Hello guys :D");
-            }
-        });
+
     }
 }
